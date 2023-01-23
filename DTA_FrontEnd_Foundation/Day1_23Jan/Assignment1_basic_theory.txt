@@ -1,0 +1,30 @@
+Task - 1
+~~~~~~~~
+1.  What is JSON?  
+2.  What is HTTP Status codes?
+3.  What is the meaning of 500 Status codes?
+4.  What is No-Sql Databases?
+
+Answers
+~~~~~~~
+1. 
+JSON is an acronym for JavaScript Object Notation. 
+It is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values). 
+It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers. JSON is a language-independent data format. 
+The basic data types used in json are number, string, boolean, array, object, null.
+
+2.
+An HTTP status code is a server response to a browser's request. 
+When a website is visited or accessed by client/user, the browser sends a request to the site's server, and the server then responds to the browser's request with a three-digit code: the HTTP status code. 
+It is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled. Status codes specs are set by the W3C. 
+Status codes are embedded in the HTTP header of a page to tell the browser the result of its request.
+
+3.
+The HTTP status code 500 is a generic error response. 
+It means that the server encountered an unexpected condition that prevented it from fulfilling the request. 
+This error response is a generic "catch-all" response.
+
+4.
+NoSQL originally referring to non SQL or non relational is a database that provides a mechanism for storage and retrieval of data. This data is modeled in means other than the tabular relations used in relational databases.
+NoSQL databases are used in real-time web applications and big data and their use are increasing over time.
+NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
