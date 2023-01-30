@@ -1,0 +1,24 @@
+1: What is the difference between get/post methods in form tag?
+2: What is Querystring?
+3: Why do we use ~ and > in css selectors?
+
+1.
+	GET method - used to request data from a specified resource
+	The HTTP GET method adds a query string at the end of the URL to send data to the server. The query string 	is in the form of key-value pair followed by ? symbol.
+	
+	POST method - used to send data to a server to update a resource
+	When we submit the form, it will add the user input data to the body of the request sent to the server.
+	
+
+2.
+	A query string is the portion of a URL where data is passed to a web application and/or back-end database. The reason we need query strings is that the HTTP protocol is stateless by design. For a website to be anything more than a brochure, you need to maintain state (store data). There are a number of ways to do this: On most web servers, you can use something like session state server-side. On the client, you can store via cookies. Or in the URL, you can store data via a query string.
+
+
+3.
+The greater than sign (>) selector in CSS is used to select the element with a specific parent. 
+It is called as element > element selector. It is also known as the child combinator selector which means that it selects only those elements which are direct children of a parent. 
+It looks only one level down the markup structure and not further deep down. Elements which are not the direct child of the specified parent is not selected.
+
+The tilde symbol(~) is known as subsequent-sibling combinator, which separates two compound selectors. 
+The elements that are represented by the two compound selectors have the same parent element. 
+The first selector precedes (but not necessarily immediately) the element that is represented by the second selector. 
