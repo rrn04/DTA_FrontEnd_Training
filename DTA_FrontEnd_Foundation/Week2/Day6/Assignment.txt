@@ -1,0 +1,14 @@
+Assignments
+~~~~~~~~~~~
+1. Can we apply more than one css class to html tags?  If yes, how to implement?
+2. How to hide an element using CSS?
+
+Answers
+~~~~~~~
+1.
+To specify multiple classes, separate the class names with a space, e.g. <span class="left important">. 
+This allows you to combine several CSS classes for one HTML element.
+
+2.
+display: none;
+visibility: hidden;

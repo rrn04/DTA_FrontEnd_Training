@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #img1
+        {
+            width: 200px;
+            height: 200px;
+            animation-name  :  trial1;
+		    animation-duration  :   4s;
+		    animation-delay  :   0s;
+		    animation-iteration-count : 4;
+		    animation-direction  :  alternate;
+        }
+       @keyframes trial1 
+         {
+            from{position: relative; left: 0%;}
+            to{position: relative; left: 89%;}
+         }
+    </style>
+</head>
+<body>
+    <h1 align = "center">Animation trial</h1> <hr>
+    <img src="gtr-removebg-preview.png" alt="img missing" id="img1">
+</body>
+</html>
