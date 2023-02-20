@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <style>
+        .container{
+    align-items: center;
+    margin: 20px 200px;
+    text-align: center;
+    border: 2px solid black;
+    background-image: url("food.jpg");
+}
+
+#header{
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-weight: 200;
+    text-align: center;
+    background-color:rgb(241, 213, 159);
+}
+
+#details{
+    border: 2px solid black;
+    margin: 20px 120px 20px 120px;
+    background-color: grey;
+    opacity: 0.9;
+}
+
+#emailfield{
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+
+}
+
+#phonefield{
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+#phone{
+    width: 100px;
+    height: 30px;
+
+}
+
+#slicesfield{
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+#slices{
+    width: 200px;
+    height: 30px;
+
+}
+
+#tandc{
+margin: 10px;
+padding: 10px;
+}
+
+#toppingDetails{
+    margin: 10px;
+    padding: 10px;
+}
+
+#btn{
+    background-color: rgb(243, 104, 35);
+    color: white;
+    font-size: large;
+    font-weight: 200;
+    text-shadow: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    margin: 20px 200px 20px 120px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div id="details">
+        <div id="header">
+            <h2>WELCOME TO ITALIAN PIZZA !</h2>
+            <P>We deliver pizza within 40 minutes max. If not - pizza is on us</P>
+        </div>
+            <div id="emailfield">
+                Email Id: 
+                <input  type="email" name="email" id="email">
+            </div>
+        
+            <div id="phonefield">
+                Phone: 
+                <input  type="number" name="phone" id="phone">
+                <input  type="number" name="phone" id="phone">
+            </div>
+            <div id="slicesfield">
+                Number of slices: 
+                <input  type="number" name="slices" id="slices">
+            </div>
+
+        <div id="pizzaSize">
+        Pizza Size:
+        <input type="radio" name="8inch" value="8inch" /> 8 inch
+        <input type="radio" name="10inch" value="10inch" /> 10 inch
+        <input type="radio" name="12inch" value="12inch" /> 12 inch
+        <input type="radio" name="14inch" value="14inch" /> 14 inch
+        </div>
+
+        <div id="toppingDetails">
+            Toppings:
+            <input type="checkbox" name="pepperoni" id="pepperoni" > Pepperoni
+            <input type="checkbox" name="onion" id="onion" > Onion
+            <input type="checkbox" name="mushrooms" id="mushrooms" > Mushrooms
+            <input type="checkbox" name="sausage" id="sausage" > Sausages
+        </div>
+
+        <div id="tandc">
+            <span style="color: red;">*</span>
+            <input type="checkbox" name="terms" id="terms"> I agree to the terms and conditions
+        </div>
+    </div>
+
+    <div id="submitButton">
+        <input id="btn" type="submit" name="submit" id="submit" value="Order Now">
+    </div>
+    </div>
+
+</form>
+</body>
+</html>

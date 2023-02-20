@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Credit card details</title>
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div id="header">
+            <img id="lock" src="lock.png" alt="lock">
+            This is secured 128 bit SSL Encrypted payment You're safe
+        </div>
+        <div id="details">
+        <input type="radio" name="card" value="card" /> Credit Card (Visa,MasterCard)
+        <img id="visa" src="visa.jpg" alt="visa">
+        <img id="mastercard" src="mastercard.jpg" alt="mastercard">
+        <input type="radio" name="paypal" value="paypal" /> Paypal
+        <div id="card-details">
+            Card number <span>The 16 digit on front of your card:  </span>
+            <input type="text" name="cardNo" id="cardNo">
+            <br>
+            <br>
+            <div id="expiry">
+                Expiration Date:   
+                <input type="month" name="expMonth"></input>
+            </div>
+
+            <div id="cvvNo">
+                CVV2/CVC2:    
+                <input type="password" name="cvv2" id="cvv2">
+            </div>
+            <div id="namefield">
+                Full name on Card: 
+                <input  type="text" name="name" id="name">
+            </div>
+
+            <div id="footer">
+                You will be charged $29 every month
+            </div>
+        </div>
+    </div>
+    <div id="submitButton">
+        <input id="btn" type="submit" name="submit" id="submit" value="Complete Transaction">
+    </div>
+    </div>
+</form>
+</body>
+</html>
