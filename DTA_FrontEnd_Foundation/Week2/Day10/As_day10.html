@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+</head>
+<body  style="text-align: center;">
+    <h2>Welcome <span id="cName"></span></h2>
+    
+    <p>Your Joining Date is <span id="jdate"></span>
+    </p>
+
+
+
+    <script>
+        // 1.  Reading data from localStorage
+        var str = localStorage.getItem("custData");
+        var userObj = JSON.parse(str);
+        console.log(userObj)
+
+        if(userObj.cName != ""){
+            document.getElementById("cName").innerHTML = userObj.cName;
+        }
+        
+        if(userObj.jdate !=""){
+            document.getElementById("jdate").innerHTML = userObj.jdate;
+        }
+
+        if(userObj.color != "#000000"){
+            document.body.style.backgroundColor = userObj.color
+        }
+
+    </script>
+</body>
+</html>

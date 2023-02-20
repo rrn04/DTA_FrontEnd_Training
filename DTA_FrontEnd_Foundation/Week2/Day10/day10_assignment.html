@@ -1,0 +1,52 @@
+<html>
+  <head></head>
+
+  <body>
+    <h3>Storing Customer Data in LocalStorage</h3>
+    <hr />
+
+    <fieldset>
+      <legend>  Customer Data</legend>
+    Customer Name :
+      <input type="text" value="scott" id="cName" name="cName" />
+      <br /><br />
+
+      Joining date :
+      <input type="date" value="01/01/2000" id="jdate" name="jdate" />
+      <br /><br />
+
+      Favourite Color :
+      <input type="color" value="Red" id="color" name="color" />
+      <br /><br />
+
+      <a href="showdata.html"><input type="button" value="Save User Data" onclick="fn_saveData()" /></a>
+    </fieldset>
+
+    <br /><br />
+
+    <script>
+
+function fn_saveData() {
+        // 1.  Get data from input fields
+        var txtcNameObj = document.getElementById("cName");
+        var txtjdateObj = document.getElementById("jdate");
+        var txtcolorObj = document.getElementById("color");
+
+        // 2.  Create object with input fields values
+        var userObj = {};
+        userObj.cName = txtcNameObj.value;
+        userObj.jDate = txtjdateObj.value;
+        userObj.color = txtcolorObj.value;
+        // 	alert(userObj);
+
+        // 3. Convert the object into JSON string
+        var str = JSON.stringify(userObj);
+        //		alert(str);
+
+        // 4.  Store the string in localStorage
+        localStorage.setItem("custData", str);
+      }
+
+    </script>
+  </body>
+</html>

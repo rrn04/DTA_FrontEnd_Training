@@ -1,0 +1,17 @@
+1. Go throung example
+2. What is design pattern in software engineering
+
+
+Answers
+~~~~~~~
+2.
+A design pattern provides a general reusable solution for the common problems that occur in software design. 
+The pattern typically shows relationships and interactions between classes or objects. 
+The idea is to speed up the development process by providing well-tested, proven development/design paradigms. 
+Design patterns are programming language independent strategies for solving a common problem. 
+Goal: 
+Understand the purpose and usage of each design pattern in order to pick and implement the correct pattern as needed. 
+There are mainly three types of design patterns: 
+1. Creational
+2. Structural
+3. Behavioral
