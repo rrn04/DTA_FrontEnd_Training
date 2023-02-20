@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Format</title>
+    <style>
+        #div1
+        {
+            border: 2px double rgb(49, 47, 47);
+            border-radius: 20px;
+            box-shadow: 10px grey;
+        }
+        #div2
+        {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">JSON Format</h1>
+    <hr>
+    <div id="div1">
+        <div id="div2">
+            <h3 align="center">Employee Details</h3>
+            Enter Employee details: <br><br>
+            Employee Name:
+            <input type="text" id="t1" name="t1" placeholder="Enter Name"><br><br>
+            Employee IdNo:
+            <input type="text" id="t2" name="t2" placeholder="Enter ID Number"><br><br>
+            Employee PhNo:
+            <input type="text" id="t3" name="t3" placeholder="Phone Number"><br><br>
+            Employee Mail:
+            <input type="text" id="t4" name="t4" placeholder="Enter Email ID"><br><br>
+            <button onclick="fn_Udata()">DONE</button><br><br>
+            <p id="para1" name="para1">hi</p>
+        </div>
+    </div>
+    <script>
+        function fn_Udata()
+        {
+            var T1obj = document.getElementById("t1");
+            var T2obj = document.getElementById("t2");
+            var T3obj = document.getElementById("t3");
+            var T4obj = document.getElementById("t4");
+
+            var Uobj = { };
+            Uobj.name = T1obj.value;
+            Uobj.ids = T2obj.value;
+            Uobj.phnos = T3obj.value;
+            Uobj.mail = T4obj.value;
+
+            
+
+            var str1 = JSON.stringify(Uobj);
+
+            document.getElementById("para1").innerText = str1;  
+
+
+        }
+    </script>
+</body>
+</html>
