@@ -1,0 +1,7 @@
+1. Can we apply more than one css class to html tags?  If yes, how to implement?
+2. How to hide an element using CSS?
+
+Answers
+~~~~~~~
+
+1.
