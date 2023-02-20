@@ -1,0 +1,42 @@
+1. What is the use of list attribute?
+2. Why to use datalist tag in html5?
+3. What are  Web Crawlers  and  BackLinks  in SEO? 
+
+Answers
+~~~~~~~
+1.
+The list attribute in HTML is used to identify a list of pre-defined options for an <input> element to suggest the user.
+<input list="name">
+
+2.
+datalist_id: It is used to specify the Id of the datalist that will used to make a link up with the input element.
+
+Example:
+<html>
+<head>
+    <title>HTML list Attribute</title>
+</head>
+<body>
+    <form action="">
+        <label>Your Cars Name: </label>
+        <input list="cars">
+        <datalist id="cars">
+            <option value="BMW" />
+            <option value="Bentley" />
+            <option value="Mercedes" />
+            <option value="Audi" />
+            <option value="Volkswagen" />
+        </datalist>
+    </form>
+</body>
+</html>
+
+3.
+Web crawlers systematically browse webpages to learn what each page on the website is about, so this information can be indexed, updated and retrieved when a user makes a search query.
+Their purpose is to index the content of websites all across the Internet so that those websites can appear in search engine results.
+Example: Amazonbot is an Amazon web crawler for web content identification and backlink discovery.
+
+A backlink is when one website links to another with an anchor text.
+Backlinks are sometimes referred to as inbound links, incoming links, or one-way links. 
+These links are clickable and allow you to jump from one website to another's page.
+The pages with backlinks are more likely to get good organic search engine rankings as they are packed with more information that provides their web pages and websites with good traffic.
